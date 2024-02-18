@@ -1,0 +1,82 @@
+h1{
+   text-align: center;
+}
+
+.main {
+   margin: 20px 80px;
+   max-width: 100%;
+}
+ 
+.conteiner {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+}
+ 
+.section {
+   flex-basis: calc(33.333% - 20px);
+   background-color: cadetblue;
+   border: 3px solid black;
+   box-sizing: border-box;
+   margin-bottom: 20px;
+}
+
+ 
+.caption1,
+.caption2,
+.caption3{
+   border: 2px solid #4a6b03;
+   border-top: none;
+   border-right: none;
+   float: right;
+   width: 30%;
+   height: 30px;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium';
+}
+
+.caption1{
+   background-color: aquamarine;
+}
+
+.caption2 {
+   background-color: rgb(118, 85, 62);
+   color: aliceblue;
+}
+
+.caption3 {
+   background-color: rgb(195, 126, 255);
+   color: rgb(181, 255, 85);
+}
+
+.text1{
+   padding: 20px;
+}
+
+p{
+   margin: 5px;
+
+}
+
+@media (max-width: 768px){
+   .section {
+       flex-basis: 100%;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   .section {
+       flex-basis: calc(50% - 20px);
+   }
+   .section:nth-child(3) {
+       flex-basis: 100%; 
+   }
+}
+
+@media (min-width: 992px) {
+   .section {
+       flex-basis: calc(33.333% - 20px);
+   }
+}
