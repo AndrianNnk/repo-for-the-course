@@ -1,0 +1,47 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #bec4be; 
+   color: #393a39;
+   margin: 0;
+   padding: 0px 0px 0px 20px;
+}
+
+button {
+   background-color: #5c5c5c; 
+   color: white; 
+   padding: 10px 20px; 
+   border: none; 
+   cursor: pointer; 
+   
+}
+
+.cell {
+   width: 60px;
+   height: 60px;
+   cursor: pointer;
+   display: inline-block;
+   border: 1px solid #003300; 
+   margin: 0; 
+}
+
+.cell.off {
+   background-color: #454545;
+}
+
+.cell.on {
+   background-color: #c9c9c9;
+}
+
+.field {
+   margin-top: 20px;
+   display: inline-block;
+}
+
+.row {
+   line-height: 0;
+}
+
+.stat {
+   display: table-cell;
+   padding: 10px;
+}
